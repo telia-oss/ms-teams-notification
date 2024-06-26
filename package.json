@@ -21,10 +21,11 @@
   "devDependencies": {
     "@types/moment-timezone": "^0.5.13",
     "@types/node-fetch": "^2.5.7",
-    "@zeit/ncc": "^0.21.1",
-    "typescript": "^3.9.5"
+    "@vercel/ncc": "^0.38.1",
+    "typescript": "^4.4.4"
   },
   "scripts": {
     "ncc": "ncc build src/index.ts -m -o dist/main && ncc build src/post.ts -m -o dist/post"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }

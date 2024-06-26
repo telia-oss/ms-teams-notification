@@ -152,7 +152,7 @@ export async function getWorkflowRunStatus() {
       conclusion: lastStep?.conclusion,
     }
 
-  } catch (error) {
+  } catch (error: any) {
     console.log(error.message);
   };
 
